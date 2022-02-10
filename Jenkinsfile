@@ -4,6 +4,7 @@ pipeline {
         stage('Build01') {
             steps {
                 sh 'python --version'
+                sh 'pwd'
             }
         }
         stage('Build02') {
