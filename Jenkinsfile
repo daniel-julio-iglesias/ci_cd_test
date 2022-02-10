@@ -21,7 +21,7 @@ pipeline {
     post {
         always {
             echo 'This will always run'
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+            aarchiveArtifacts 'build/libs/**/*.jar'
             junit 'build/reports/**/*.xml'
         }
         success {
