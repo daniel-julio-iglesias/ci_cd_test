@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'Running run-smoke-tests script'
+echo "Running $0 script"
