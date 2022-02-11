@@ -1,3 +1,2 @@
 #!/bin/bash
-read $arg01
-echo "The first argument is: $arg01"
+echo "The first argument is: $1"
