@@ -16,6 +16,7 @@ pipeline {
         }
         stage('Deploy - Staging') {
             steps {
+                sh "chmod +x -R ${env.WORKSPACE}"
                 sh './deploy staging'
                 sh './run-smoke-tests'
             }
@@ -29,6 +30,7 @@ pipeline {
 
         stage('Deploy - Production') {
             steps {
+                sh "chmod +x -R ${env.WORKSPACE}"
                 sh './deploy production'
             }
         }
